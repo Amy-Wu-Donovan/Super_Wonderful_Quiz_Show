@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Wonderful Quiz Show!</title>
+    <meta charset="utf-8"/>
+	<link rel='stylesheet' href='style.css'/>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src='script.jsx'></script>
+</head>
+<body>
+    <header class="headingpagearea">
+        <div id="introduction">
+            <h1>Welcome to another exciting episode of...</h1>
+            <h2>"The Super Wonderful Quiz Show!"</h2>
+        </div>
+        <div id="finale">
+            <h1>Thank you for playing, folks! Tune in next time, on...</h1>
+            <h2>"The Super Wonderful Quiz Show!"</h2>
+        </div>
+    </header>
+    <section class="questionarea">
+        <div id="intro">
+            <p>If you correctly answer three questions in a row, you get a cookie! Ready to begin? Then hit the button below!</p>
+            <button id="startingbutton" onclick="gameStart()">Start!</button>
+        </div>
+        <div id="hiddenquestion1">
+            <p class="question">What is your name?</p>
+            <form name="useranswer1" onsubmit="return validateForm1()" action="javascript:void(0);">
+                <input type="text" id="answerbox1" name="usernameinput" required>
+            </form>
+            <button type="submit" id="btn1" class="answerbutton" onclick="gamePlay1()">Submit</button>
+        </div>
+        <div id="hiddenquestion2">
+            <p class="question">What is your quest?</p>
+            <form name="useranswer2" onsubmit="return validateForm2()" action="javascript:void(0);">
+                <input type="text" id="answerbox2" name="userquestinput" required>
+            </form>
+            <button type="submit" id="btn2" class="answerbutton" onclick="gamePlay2()">Submit</button>
+        </div>
+        <div id="hiddenquestion3">
+            <p class="question">What is the capital of Assyria?</p>
+            <form name="useranswer3" onsubmit="return validateForm3()" action="javascript:void(0);">
+                <input type="text" id="answerbox3" name="usercapitalinput" required>
+            </form>
+            <button type="submit" id="btn3" class="answerbutton" onclick="gamePlay3()">Submit</button>
+        </div>
+        <div id="correctanswerpage">
+            <h3>CONGRATULATIONS!!</h3>
+            <p>I'm surprised you actually knew what one of the capitals of Assyria even was! Here, have a cookie. You deserved it~.</p>
+        </div>
+        <div id="wronganswerpage">
+            <h3>Whoops, too bad!</h3>
+            <p>Didn't think all three questions were gonna be that easy, huh? Try again next time!</p>
+        </div>
+        <button id="restartbutton" value="RELOAD" onclick="main()">Restart?</button>
+    </section>
+    <footer>
+        <div class="disclaimer">
+        <p><b>Disclaimer:</b> This sample website is modeled after a similar moment from an episode of of a certain Yu-gi-oh Arc V abridged series. Specifically Episode 8: I Survived a Japagyptian Quiz Show. (Which in turn was inspired by a segment of Monty Python.) Unfortunately the series of videos have been taken down, but I figured I might as well give credit where credit is due.</p>
+        </div>
+    </footer>
+</body>
+</html>

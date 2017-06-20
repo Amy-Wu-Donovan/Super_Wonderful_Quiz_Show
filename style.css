@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.questionarea {
+    background-color: white;
+    padding: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    max-width: 900px;
+    width: 80%;
+    display: inline-block;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    text-align: left;
+    display: inline-block;
+    width: 90%;
+    max-width: 900px;
+}
